@@ -16,5 +16,11 @@ pipeline{
                 sh 'mvn clean package'
             }
         }
+        stage("info"){
+            steps{
+               sh 'whoami'
+                echo $HOSTNAME
         } 
     }
+    }
+}
