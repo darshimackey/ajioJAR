@@ -18,6 +18,7 @@ pipeline{
         }
         stage("info"){
             steps{
+                sh 'pwd'
                sh 'whoami'
                 echo $HOSTNAME
         } 
