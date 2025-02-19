@@ -20,7 +20,7 @@ pipeline{
             steps{
                 sh 'pwd'
                sh 'whoami'
-                echo $HOSTNAME
+                echo '$HOSTNAME'
         } 
     }
     }
